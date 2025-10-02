@@ -1,0 +1,248 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button, select, input {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 6.25%;
+    padding-bottom: 15px;
+    padding-left: 6.25%;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.star {
+    font-size: 20px;
+}
+
+.variant {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(53,65,83);
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.img {
+    width: 28px;
+    height: 28px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 6.25%;
+    margin-bottom: 20px;
+    margin-left: 6.25%;
+    color: rgb(53,65,83);
+    position: relative;
+}
+
+.details {
+    position: relative;
+    display: inline-block;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 5px;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.sort {
+    display: flex;
+}
+
+.select {
+    border:none;
+    padding: 8px 16px;
+    font-weight: bold;
+    color: rgb(53,65,83);
+    cursor: pointer;
+}
+
+.products {
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+}
+
+.container {
+    display: flex;
+    gap: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+}
+
+.name {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    margin: 8px 0 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+.overlay-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.overlay-text {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-right: 6.25%;
+    padding-bottom: 10px;
+    padding-left: 6.25%;
+}
+
+.copyright {
+    font-size: 16px;
+    color: rgb(53,65,83);
+}
